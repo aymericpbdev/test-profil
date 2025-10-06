@@ -1,11 +1,11 @@
 /* CSS Variables for customization */
 :root {
-    --primary-color: #4a90e2;
-    --primary-hover: #357abd;
-    --text-color: #333333;
-    --text-light: #666666;
+    --primary-color: #004ba0;
+    --primary-hover: #00e2d0;
+    --text-color: #2b2b2b;
+    --text-light: #6b6b6b;
     --card-background: #ffffff;
-    --page-background: #f0f0f0;
+    --page-background: #e1e1e1;
 }
 
 /* Page styling */
