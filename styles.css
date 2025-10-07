@@ -1,11 +1,13 @@
 /* CSS Variables for customization */
 :root {
-    --primary-color: #004ba0;
-    --primary-hover: #00e2d0;
-    --text-color: #2b2b2b;
-    --text-light: #6b6b6b;
-    --card-background: #ffffff;
-    --page-background: #e1e1e1;
+    --primary-color: hsl(240 100% 50%);
+    --primary-hover: hsl(240 80% 70%);
+    --primary-hover-text: hsl(240 100% 30%);
+    --text-color: hsl(0 0% 17%);
+    --text-light: hsl(0 0% 40%);
+    --card-background: hsl(0 0% 100%);
+    --page-background: hsl(0 0% 70%);
+    --button-shadow: hsl(0 0% 40%);
 }
 
 /* Page styling */
@@ -17,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 /* Profile card styling */
@@ -47,6 +49,17 @@ body {
     color: var(--text-color);
     margin-bottom: 10px;
     font-weight: bold;
+    text-transform : full-width;
+}
+
+/* First Name 1st letter uppercase */
+span.cap {
+    text-transform: capitalize;
+}
+
+/* Last Name full uppercase */
+span.upper {
+    text-transform: uppercase;
 }
 
 /* Role styling */
@@ -79,4 +92,7 @@ body {
 /* Contact button hover effect */
 .contact-button:hover {
     background-color: var(--primary-hover);
+    transform: translateY(-3px) scale(1.05);
+    color: var(--primary-hover-text);
+    box-shadow: 0px 3px 6px 3px var(--button-shadow);
 }
